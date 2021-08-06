@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="author" content="Justin">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Justin Motors</title>
+    </head>
+    <body style="font-family:sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial; font-weight: bold;">
+        <div class="container">
+     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+         <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo" id="logo"/></a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+             <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="collapsibleNavbar">
+         <ul class="navbar-nav">
+             <li class="nav-item">
+             <a class="nav-link modal-toggler" data-toggle="modal" data-target="#mynewmodal" >BOOKING FORM</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">CONTACT US</a>
+            </li>
+         </ul>
+        </div>
+     </nav>
+     <div class="jumbotron" style="padding-top: 0.5cm;">
+     <div class="carousel slide" id="acarousel" data-ride="carousel">
+       <ul class="carousel-indicators">
+           <li data-slide-to="0" class="active" data-target="#acarousel"></li>
+           <li data-slide-to="1" data-target="#acarousel"></li>
+           <li data-slide-to="2" data-target="#acarousel"></li>
+       </ul>
+       <div class="carousel-inner rounded">
+           <div class="carousel-item active">
+               <img src="images/transportVan.jpg" alt="transport_van" style="width: 100%;"/>
+               <div class="carousel-caption text-muted">
+                   <h1>JUSTIN MOTORS</h1>
+                   <h3>Taking you to your destination in good time</h3>
+               </div>
+           </div>
+           <div class="carousel-item">
+               <img src="images/van.jpg" alt="van" style="width: 100%;"/>
+               <div class="carousel-caption">
+                   
+                   <h3>Get the luxury of one of the most efficient motoring systems</h3>
+               </div>
+           </div>
+           <div class="carousel-item">
+               <img src="images/deliveryVan.jpg" alt="delivery_van" style="width: 100%;"/>
+               <div class="carousel-caption">
+                   <h3>We deliver to your doorstep</h3>
+               </div>
+           </div>
+           
+       </div>
+       <a class="carousel-control-prev" data-slide="prev" href="#acarousel"><span class="carousel-control-prev-icon"></span></a>
+       <a class="carousel-control-next" data-slide="next" href="#acarousel"><span class="carousel-control-next-icon"></span></a>
+    </div>
+     </div>
+     <div class="modal" id="mynewmodal">
+         <div class="modal-dialog">
+             <div class="modal-content">
+                 <div class="modal-header">
+                     <div class="modal-title">
+                         JUSTIN MOTORS
+                     </div>
+                     <button class="close" data-target="#mynewmodal" data-dismiss="modal">&times;</button>
+                    
+                 </div>
+                 <div class="header">
+                     <nav class="navbar-nav sticky-top">
+                         <ul class="nav nav-pills" role="tablist">
+                             <li class="nav-item navbar-light col-md-6 col-sm-12"><a class="nav-link active" href="#passenger" role="tab" data-toggle="pill" style="text-align: center;">Passenger</a></li>
+                             <li class="nav-item navbar-light col-md-6 col-sm-12"><a class="nav-link" href="#cargo" role="tab" data-toggle="pill" style="text-align: center;">Cargo</a></li>
+                         </ul>
+                     </nav>
+                 </div>
+                 <div class="tab-content">
+                 <div class="modal-body tab-pane show active" role="tabpanel" id="passenger">
+                     
+                    
+                   <form class="form-group">
+                       <div class="row">
+                           <div class="col">
+                               <!--for passenger departure-->
+                     <label for="leavefrom">Leave From:</label>
+                     <select id="leavefrom" class="select form-control" onchange="city()">
+                        <option value="0" class="text-muted">Select State...</option>
+                         <option value="1">Abia</option>
+                         <option value="2">Adamawa</option>
+                         <option value="3">Akwa-Ibom</option>
+                         <option value="4">Anambra</option>
+                         <option value="5">Bauchi</option>
+                         <option value="6">Bayelsa</option>
+                         <option value="7">Benue</option>
+                         <option value="8">Borno</option>
+                         <option value="9">Cross-River</option>
+                         <option value="10">Delta</option>
+                         <option value="11">Ebonyi</option>
+                         <option value="12">Edo</option>
+                         <option value="13">Ekiti</option>
+                         <option value="14">Enugu</option>
+                         <option value="15">Gombe</option>
+                         <option value="16">Imo</option>
+                         <option value="17">Jigawa</option>
+                         <option value="18">Kaduna</option>
+                         <option value="19">Kano</option>
+                         <option value="20">Katsina</option>
+                         <option value="21">Kebbi</option>
+                         <option value="22">Kogi</option>
+                         <option value="23">Kwara</option>
+                         <option value="24">Lagos</option>
+                         <option value="25">Nasarawa</option>
+                         <option value="26">Niger</option>
+                         <option value="27">Ogun</option>
+                         <option value="28">Ondo</option>
+                         <option value="29">Osun</option>
+                         <option value="30">Oyo</option>
+                         <option value="31">Plateau</option>
+                         <option value="32">Rivers</option>
+                         <option value="33">Sokoto</option>
+                         <option value="34">Taraba</option>
+                         <option value="35">Yobe</option>
+                         <option value="36">Zamfara</option>
+                         <option value="37">FCT</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <label for="city">City:</label>
+                   
+                    <select id="citySelect" class="form-control">
+                       
+                    </select>
+                </div>
+                </div>
+               
+               
+<!--for passenger destination-->
+                     <br>
+                     <div class="row">
+                         <div class="col">
+                     <label for="leaveto">Destination:</label>
+                     <select id="leaveto" class="select form-control" placeholder="state" onchange="secondCity()">
+                        <option value="0" class="text-muted">Select State...</option>
+                         <option value="1">Abia</option>
+                         <option value="2">Adamawa</option>
+                         <option value="3">Akwa-Ibom</option>
+                         <option value="4">Anambra</option>
+                         <option value="5">Bauchi</option>
+                         <option value="6">Bayelsa</option>
+                         <option value="7">Benue</option>
+                         <option value="8">Borno</option>
+                         <option value="9">Cross-River</option>
+                         <option value="10">Delta</option>
+                         <option value="11">Ebonyi</option>
+                         <option value="12">Edo</option>
+                         <option value="13">Ekiti</option>
+                         <option value="14">Enugu</option>
+                         <option value="15">Gombe</option>
+                         <option value="16">Imo</option>
+                         <option value="17">Jigawa</option>
+                         <option value="18">Kaduna</option>
+                         <option value="19">Kano</option>
+                         <option value="20">Katsina</option>
+                         <option value="21">Kebbi</option>
+                         <option value="22">Kogi</option>
+                         <option value="23">Kwara</option>
+                         <option value="24">Lagos</option>
+                         <option value="25">Nasarawa</option>
+                         <option value="26">Niger</option>
+                         <option value="27">Ogun</option>
+                         <option value="28">Ondo</option>
+                         <option value="29">Osun</option>
+                         <option value="30">Oyo</option>
+                         <option value="31">Plateau</option>
+                         <option value="32">Rivers</option>
+                         <option value="33">Sokoto</option>
+                         <option value="34">Taraba</option>
+                         <option value="35">Yobe</option>
+                         <option value="36">Zamfara</option>
+                         <option value="37">FCT</option>
+                         
+                    </select>
+                </div>
+                    <div class="col">
+                    <label for="city">City:</label>
+                   
+                    <select id="secondCitySelect" class="form-control">
+                       
+                    </select>
+                </div>
+                </div>
+                <br>
+                <label for="departureDate">Departure Date:</label>
+                <input class="form-control" type="date">
+                <div class="row" style="margin-top: 20px;">
+                <label for="numberOfPassengers" class="col-5">Number Of Passegers:</label>
+                <select id="numberOfPassengers" class="form-control col-2">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+
+
+                </select>
+            </div>
+
+
+
+
+
+                <button class="btn btn-dark" type="button" style="margin-top: 20px;">submit</button>
+                   </form>
+                   <footer></footer>
+                </div>
+
+
+
+<!--for cargo-->
+
+                <div class="modal-body tab-pane" role="tabpanel" id="cargo">
+                    
+                    <form class="form-group">
+                        <div class="row">
+                        <label for="receiverName" class="col-3">Name:</label>
+                        <input id="receiverName" type="text" placeholder="Receiver's name" class="form-control col-8">
+                        </div>
+                        
+                        <div class="row">
+                        <label for="receiverEmail" class="col-3">email:</label>
+                        <input type="email" class="form-control col-8"placeholder="Receiver's email" id="receiverEmail">
+                        </div>
+                        <div class="row">
+                            <label for="receiverPhoneNumber" class="col-3">Telephone:</label>
+                            <input type="text" class="form-control col-8" placeholder="Receiver's telephone" id="receiverPhoneNumber">
+                        </div>
+                    <!--for cargo departure-->
+                        <div class="row">
+                            <div class="col">
+                      <label for="leavefromtwo">Leave From:</label>
+                      <select id="leavefromtwo" class="select form-control" onchange="citytwo()">
+                         <option value="0" class="text-muted">Select State...</option>
+                          <option value="1">Abia</option>
+                          <option value="2">Adamawa</option>
+                          <option value="3">Akwa-Ibom</option>
+                          <option value="4">Anambra</option>
+                          <option value="5">Bauchi</option>
+                          <option value="6">Bayelsa</option>
+                          <option value="7">Benue</option>
+                          <option value="8">Borno</option>
+                          <option value="9">Cross-River</option>
+                          <option value="10">Delta</option>
+                          <option value="11">Ebonyi</option>
+                          <option value="12">Edo</option>
+                          <option value="13">Ekiti</option>
+                          <option value="14">Enugu</option>
+                          <option value="15">Gombe</option>
+                          <option value="16">Imo</option>
+                          <option value="17">Jigawa</option>
+                          <option value="18">Kaduna</option>
+                          <option value="19">Kano</option>
+                          <option value="20">Katsina</option>
+                          <option value="21">Kebbi</option>
+                          <option value="22">Kogi</option>
+                          <option value="23">Kwara</option>
+                          <option value="24">Lagos</option>
+                          <option value="25">Nasarawa</option>
+                          <option value="26">Niger</option>
+                          <option value="27">Ogun</option>
+                          <option value="28">Ondo</option>
+                          <option value="29">Osun</option>
+                          <option value="30">Oyo</option>
+                          <option value="31">Plateau</option>
+                          <option value="32">Rivers</option>
+                          <option value="33">Sokoto</option>
+                          <option value="34">Taraba</option>
+                          <option value="35">Yobe</option>
+                          <option value="36">Zamfara</option>
+                          <option value="37">FCT</option>
+                     </select>
+                 </div>
+                 <div class="col">
+                     <label for="citySelecttwo">City:</label>
+                    
+                     <select id="citySelecttwo" class="form-control">
+                        
+                     </select>
+                 </div>
+                 </div>
+                
+                
+ <!--for cargo destination-->
+                      <br>
+                      <div class="row">
+                          <div class="col">
+                      <label for="leavetotwo">Destination:</label>
+                      <select id="leavetotwo" class="select form-control" placeholder="state" onchange="secondCitytwo()">
+                         <option value="0" class="text-muted">Select State...</option>
+                          <option value="1">Abia</option>
+                          <option value="2">Adamawa</option>
+                          <option value="3">Akwa-Ibom</option>
+                          <option value="4">Anambra</option>
+                          <option value="5">Bauchi</option>
+                          <option value="6">Bayelsa</option>
+                          <option value="7">Benue</option>
+                          <option value="8">Borno</option>
+                          <option value="9">Cross-River</option>
+                          <option value="10">Delta</option>
+                          <option value="11">Ebonyi</option>
+                          <option value="12">Edo</option>
+                          <option value="13">Ekiti</option>
+                          <option value="14">Enugu</option>
+                          <option value="15">Gombe</option>
+                          <option value="16">Imo</option>
+                          <option value="17">Jigawa</option>
+                          <option value="18">Kaduna</option>
+                          <option value="19">Kano</option>
+                          <option value="20">Katsina</option>
+                          <option value="21">Kebbi</option>
+                          <option value="22">Kogi</option>
+                          <option value="23">Kwara</option>
+                          <option value="24">Lagos</option>
+                          <option value="25">Nasarawa</option>
+                          <option value="26">Niger</option>
+                          <option value="27">Ogun</option>
+                          <option value="28">Ondo</option>
+                          <option value="29">Osun</option>
+                          <option value="30">Oyo</option>
+                          <option value="31">Plateau</option>
+                          <option value="32">Rivers</option>
+                          <option value="33">Sokoto</option>
+                          <option value="34">Taraba</option>
+                          <option value="35">Yobe</option>
+                          <option value="36">Zamfara</option>
+                          <option value="37">FCT</option>
+                          
+                     </select>
+                 </div>
+                     <div class="col">
+                     <label for="secondCitySelecttwo">City:</label>
+                    
+                     <select id="secondCitySelecttwo" class="form-control">
+                        
+                     </select>
+                 </div>
+                 </div>
+                 <br>
+                 <label for="departureDate">Departure Date:</label>
+                 <input class="form-control" type="date">
+                
+ 
+ 
+ 
+ 
+ 
+                 <button class="btn btn-dark" type="button" style="margin-top: 20px;">submit</button>
+                    </form>
+                    <footer></footer>
+                </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+
+
+
+
+
+
+
+
+        </div>
+        <script src="js/custom.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+#collapsibleNavbar {
+    margin-left: 5cm;
+}
+li {
+    margin-left: auto;
+    margin-right:auto;
+    padding-left: 1cm;
+    padding-right: 1cm;
+}
+#logo {
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 1.5cm;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #353636;
+}
+
+.nav-pills .nav-item .col-md-6{
+    padding: 0cm;
+}
+.nav-link{
+    color: black;
+}
+.row{
+    margin-top: 20px;
+}
